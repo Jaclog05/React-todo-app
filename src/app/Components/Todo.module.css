@@ -1,0 +1,40 @@
+.todoContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.todoText {
+    margin-right: 8px;
+    flex: 1
+}
+
+.todoIcon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    margin: auto 3px;
+}
+
+/* edit todo mode */
+
+.todoEditContainer {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.todoInputText{
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.submitButton{
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+} 

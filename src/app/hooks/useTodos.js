@@ -24,9 +24,17 @@ export function useTodos() {
 			})
     }
 
+	const deleteTodo = (id) => {
+		dispatch({
+			type: 'DELETED',
+			id: id
+		})
+	}
+
     return {
-			todos,
-			addTodo,
-			updateTodo
+		todos,
+		addTodo,
+		updateTodo,
+		deleteTodo
     }
 }

@@ -24,6 +24,9 @@ export default function todosReducer(state, action) {
 				}
 			)
 		}
+		case 'DELETED': {
+			return state.filter(item => item.id !== action.id)
+		}
 		default: {
 				throw Error('Unknown action: ' + action.type);
 		}

@@ -4,7 +4,7 @@ import { useTodos } from "../hooks/useTodos";
 
 export default function TodoApp() {
 
-  const { todos, addTodo, updateTodo } = useTodos()
+  const { todos, addTodo, updateTodo, deleteTodo } = useTodos()
 
   return (
     <>
@@ -14,6 +14,7 @@ export default function TodoApp() {
       <TodosWrapper
         todos={todos}
         onUpdate={updateTodo}
+        onDelete={deleteTodo}
       />
     </>
   )
